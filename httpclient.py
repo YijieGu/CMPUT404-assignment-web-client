@@ -43,7 +43,7 @@ class HTTPClient(object):
 
     def get_code(self, data):
         data_list = data.split()
-        code = int(data.split()[1])
+        code = int(data_list[1])
         return code
 
     def get_headers(self,data):
